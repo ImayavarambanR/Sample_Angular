@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main Page</title>
+	<script src="angular.min.js"></script>
+    <script src="angular-ui-router.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/home.css"/>
+	<script src="js/home.js"></script>
+</head>
+<body ng-app="cool">
+	<ul>
+	  <li><a class="active" ui-sref="login">News Feed</a></li>
+	  <li><a href="#news">Profile</a></li>
+	  <li><a href="#contact">External</a></li>
+	  <li><a href="#about">Complaint</a></li>
+	  
+	</ul>
+	<div style="margin-left:20%;padding:1px 16px;height:1000px;background-color: blue;">
+		<ui-view></ui-view>
+	</div>
+</body>
+</html>
